@@ -137,6 +137,11 @@ class MapGridSpec extends ObjectBehavior
         $this->shouldThrow('\RunTimeException')->duringGetMapTileInDirection(new MapCoordinates(0, 0), Map::DIRECTION_NORTH);
     }
 
+    function it_returns_the_map_size()
+    {
+        $this->getMapSize()->shouldReturn(12);
+    }
+
     private function makeTile($id, $x, $y): BaseMapTile
     {
         return new BaseMapTile($id, new MapCoordinates($x, $y));
