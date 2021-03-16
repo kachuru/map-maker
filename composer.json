@@ -20,7 +20,7 @@
     },
     "scripts": {
         "spec": [
-            "vendor/bin/phpspec run"
+            "phpdbg -qrr vendor/bin/phpspec run"
         ],
         "sniff": [
             "vendor/bin/phpcs --standard=PSR2 src/"
