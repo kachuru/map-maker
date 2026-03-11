@@ -49,7 +49,7 @@ class MapGrid implements Map
         }
     }
 
-    public function getAdjacentTiles(MapCoordinates $mapCoordinates): iterable
+    public function getAdjacentTiles(MapCoordinates $mapCoordinates): \Generator
     {
         foreach ($this->getAdjustmentList($mapCoordinates) as $coordinateAdjustment) {
             yield $this->getMapTileByCoordinates(
