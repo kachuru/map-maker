@@ -42,7 +42,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Kachuru\\": "src/Kachuru/"
+            "Kachuru\\MapMaker\\": "src/Kachuru/MapMaker/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "spec\\Kachuru\\MapMaker\\": "spec/Kachuru/MapMaker/"
         }
     }
 }
